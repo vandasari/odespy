@@ -1,6 +1,6 @@
 # Odespy
 
-Odespy is a Python library for solving various types of ordinary differential equations (ODEs). The first release (version 0.1.0) offers solutions to initial value problems (IVPs) of non-stiff type.
+Odespy is a Python library for solving various types of ordinary differential equations (ODEs). The first release (version 0.1.1) offers solutions to initial value problems (IVPs) of non-stiff type.
 
 ## (1) Installation
 
@@ -129,14 +129,10 @@ $$
 $$
 
 $$
-\dfrac{dv}{dt} = -0.2v - y + 2 \cos(\pi t) -
-\begin{cases}
-4 & \quad \text{if $v>0$}\\
--4 & \quad \text{otherwise}
-\end{cases}
+\dfrac{dv}{dt} = -0.2v - y + 2 \cos(\pi t) - a
 $$
 
-we write in Python
+where $a=4$ if $v>0$, otherwise $a=-4$, we write in Python
 
 ```
 def coulomb_func(t, y, p):
