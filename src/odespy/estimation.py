@@ -1,6 +1,6 @@
 import numpy as np
 import copy
-from tableaux import (
+from .tableaux import (
     CashKarp,
     DormandPrince45,
     DormandPrince78,
@@ -94,4 +94,3 @@ class Approximation(Variables):
         self.y += self.h * tmp
         self.t += self.h
         return self.t, self.y
-

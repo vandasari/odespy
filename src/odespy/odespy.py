@@ -2,11 +2,11 @@ import copy
 import numpy as np
 
 np.seterr(divide="ignore", invalid="ignore")
-from step_size import StepSize
-from initialization import ArrayInitialization
-from estimation import Variables, Approximation
-from norms import norm
-from predictor_corrector import approxRK41Class
+from .step_size import StepSize
+from .initialization import ArrayInitialization
+from .estimation import Variables, Approximation
+from .norms import norm
+from .predictor_corrector import approxRK41Class
 
 ###-------------------------###
 

@@ -1,5 +1,5 @@
 import numpy as np
-from norms import norm
+from .norms import norm
 
 
 class StepSize:
@@ -10,18 +10,17 @@ class StepSize:
         self.params = params
         self.method = method.lower()
         self.nord = nord
-        if (                  
+        if (
             self.method == "rkf45"
             or self.method == "rkck"
-            or self.method == "rk45" 
-            or self.method == "default" 
+            or self.method == "rk45"
+            or self.method == "default"
         ):
             self.p = 4
         elif self.method == "rkv":
             self.p = 5
         elif self.method == "rkf78" or self.method == "rk78":
             self.p = 7
-
 
     # def deriv_0(self):
     #     return self.norm(self.y0)

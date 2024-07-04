@@ -27,7 +27,7 @@ Currently available functions in odespy:
   - `method='rkck'` of Cash-Karp is based on the RK 5(4) formula<sup>[5]</sup>
   - `method='rkv'` of Verner is based on the RK 6(5) formula<sup>[6]</sup>
 
-- `abm4()` for solving non-stiff IVPs with jumps or discontinuity applies the 4th-order Adams-Bashforth method as a predictor and 3rd-order Adams-Moulton method as a corrector; also called the predictor-corrector method. Currently, this function only works with fixed step sizes and uses the predictor-evalute-corrector or PEC mode, with $k$ fixed point iterations per step or $\text{P(EC)}^k$.
+- `abm4()` for solving non-stiff IVPs with jumps or discontinuity applies the 4th-order Adams-Bashforth method as a predictor and 3rd-order Adams-Moulton method as a corrector; also called the predictor-corrector method. Currently, this function only works with fixed step sizes and uses the predictor-evalute-corrector or PEC mode, with $k$ fixed point iterations per step or $\text{P(EC)}^k$. Future release will include the adaptive time-stepping modification.
 
 How would we know if the equations we want to solve are stiff or non-stiff? Well, the rule of thumb is:
 

@@ -1,5 +1,5 @@
 import numpy as np
-from tableaux import RK41Explicit
+from .tableaux import RK41Explicit
 
 
 class Variables:
