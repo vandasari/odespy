@@ -61,6 +61,8 @@ The function has the following output:
 Parameters of equations should be put in a list or NumPy array, like the following system of van der Pol oscillator with scalar parameter $\mu=1.0$,
 
 ```
+import numpy as np
+
 def vdp_func(t, y, p):
     dy = np.zeros((len(y), ))
     dy[0] = y[1]
@@ -135,6 +137,8 @@ $$
 where $a=4$ if $v>0$, otherwise $a=-4$, we write in Python
 
 ```
+import numpy as np
+
 def coulomb_func(t, y, p):
     dy = np.zeros((len(y),))
     if y[1] > 0:
