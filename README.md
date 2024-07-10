@@ -1,6 +1,6 @@
 # Odespy
 
-Odespy is a Python library for solving various types of ordinary differential equations (ODEs). The first release offers solutions to initial value problems (IVPs) of non-stiff type.
+Odespy is a Python library for solving various types of ordinary differential equations (ODEs). The initial release offers solutions to initial value problems (IVPs) of non-stiff type.
 
 ## (1) Installation
 

@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "odespy"
 version = "0.1.1"
 authors = [
-  { name="Vivi Andasari", email="vandasari@gmail.com" },
+  { name="Vivi Andasari, PhD", email="vandasari@gmail.com" },
 ]
 description = "A library for solving various types of ordinary differential equations (ODEs)"
 readme = "README.md"
